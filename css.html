@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1><a href="./index.html">WEB</a></h1>
+    <button id="btn" onclick="
+        // 배경색상 변경 함수
+        function setBgColor(color){
+            elBody.style.backgroundColor=color; 
+        }
+        // 기본글꼴 색상 변경 함수
+        function setColor(color){
+            elBody.style.color=color;
+        }
+        // 링크택스트 색상 변경 함수
+        function linkColor(color){
+            for(let idx=0;idx<=aryA.length-1;idx++){
+                aryA[idx].style.color=color;
+            }
+        }
+        //변경 택스트 함수
+        function changeTxt(txt){
+            changeBtn.innerHTML=txt;
+        }
+
+        let changeBtn = document.querySelector('#btn');
+        let elBody = document.querySelector('body');
+        let aryA = document.querySelectorAll('a'); 
+
+        if(changeBtn.innerHTML == '다크'){
+            // 다크화면            
+            setBgColor('#000000');
+            setColor('#ffffff');
+            linkColor('#add8e6');
+            changeTxt('라이트');
+        }else{
+            // 라이트화면            
+            setBgColor('#ffffff');
+            setColor('#000000');
+            linkColor('#0000ff');
+            changeTxt('다크');
+        }
+    ">다크</button>
+    <ol>
+        <li><a href="./html.html">HTML</a></li>
+        <li><a href="./css.html">CSS</a></li>
+        <li><a href="./js.html">javaScript</a></li>
+    </ol>
+    <h2>CSS란 무엇인가?</h2>    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quis dolore repudiandae eaque cumque cum architecto necessitatibus expedita velit explicabo recusandae distinctio enim eos voluptate nihil similique, quos debitis reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ipsam sint magni dicta ad cupiditate, natus debitis doloremque beatae nesciunt eum aut praesentium, in tempora tenetur ipsa. Et nostrum perspiciatis eum animi consectetur laborum ipsam dolorum officia tempora nobis ex laboriosam minus provident, inventore similique, optio atque illo, nesciunt consequuntur rem in! At provident officiis expedita! Ut itaque laboriosam nulla voluptate rem aperiam recusandae nesciunt facere a culpa magnam laborum repellendus modi asperiores eveniet veritatis quam, in nobis ipsum, quibusdam ab! Aspernatur voluptatem nulla odio, culpa ab nesciunt beatae pariatur debitis distinctio ut cum a esse, quas hic dolores vitae!</p>
+</body>
+</html>
