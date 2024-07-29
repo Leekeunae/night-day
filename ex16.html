@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
+        /* 모바일스타일 */
         div{
             width:100px;
             height:100px;
-            margin: 0 auto;
-            background-color: red;
+            margin:0 auto;
+            background-color:red;
         }
-        div{
-            width: 300px;       
-            background-color: green;
+
+        @media (min-width:960px){
+            /* 데스크탑 스타일 */
+            div{
+                width:300px;
+                background-color:green;
+            }
         }
+        
     </style>
 </head>
 <body>
     <div></div>
-    
 </body>
-</html> 
+</html>

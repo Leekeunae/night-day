@@ -1,0 +1,15 @@
+ CSS(Cascading Style Sheet)
+
+ 상속
+ 종속
+ 조상,부모,자식
+ 선택자 우선순위
+ 선택자 종류(type, id, class)
+          id는 중복될수 없다.
+       class는 중복가능하다.
+
+ 박스모델
+
+
+
+
